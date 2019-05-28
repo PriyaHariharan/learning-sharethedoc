@@ -1,0 +1,184 @@
+[info] [Appium] Welcome to Appium v1.7.2
+[info] [Appium] Appium REST http interface listener started on 0.0.0.0:4723[info] [HTTP] --> POST /wd/hub/session {"capabilities":[{"desiredCapabilities":{"appPackage":"com.amazon.mShop.android.shopping","appActivity":"com.amazon.mShop.home.HomeActivity","platformVersion":"8.0.0","--session-override":true,"platformName":"Android","deviceName":"Xperia XZ1 Compact"}},{"requiredCapabilities":{}}],"desiredCapabilities":{"appPackage":"com.amazon.mShop.android.shopping","appActivity":"com.amazon.mShop.home.HomeActivity","platformVersion":"8.0.0","--session-override":true,"platformName":"Android","deviceName":"Xperia XZ1 Compact"},"requiredCapabilities":{}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"appPackage":"com.amazon.mShop.android.shopping","appActivity":"com.amazon.mShop.home.HomeActivity","platformVersion":"8.0.0","--session-override":true,"platformName":"Android","deviceName":"Xperia XZ1 Compact"},{},[{"desiredCapabilities":{"appPackage":"com.amazon.mShop.android.shopping","appActivity":"com.amazon.mShop.home.HomeActivity","platformVersion":"8.0.0","--session-override":true,"platformName":"Android","deviceName":"Xperia XZ1 Compact"}},{"requiredCapabilities":{}}]]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1536915537315 (14:28:57 GMT+0530 (India Standard Time))
+[info] [Appium] Merged W3C capabilities [{"desiredCapabilities":{"appPackage":"com.amaz... into desiredCapabilities object {"appPackage":"com.amazon.mShop.android.shoppin...
+[info] [Appium] Creating new AndroidDriver (v1.37.0) session
+[info] [Appium] Capabilities:
+[info] [Appium]   appPackage: com.amazon.mShop.android.shopping
+[info] [Appium]   appActivity: com.amazon.mShop.home.HomeActivity
+[info] [Appium]   platformVersion: 8.0.0
+[info] [Appium]   --session-override: true
+[info] [Appium]   platformName: Android
+[info] [Appium]   deviceName: Xperia XZ1 Compact
+[warn] [BaseDriver] The following capabilities were provided, but are not recognized by appium: --session-override.
+[info] [BaseDriver] Session created with session id: fbb29a42-3bd6-4755-919e-4a4aa043d4ca
+[debug] [AndroidDriver] Getting Java version[info] [AndroidDriver] Java version is: 1.8.0_91
+[info] [ADB] Checking whether adb is present
+[info] [AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[info] [AndroidDriver] Looking for a device with Android '8.0.0'
+[debug] [ADB] Setting device id to BH9000E47T
+[info] [ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","getprop","ro.build.version.release"][debug] [ADB] Current device property 'ro.build.version.release': 8.0.0
+[info] [AndroidDriver] Using device: BH9000E47T
+[info] [ADB] Checking whether adb is present
+[debug] [ADB] Setting device id to BH9000E47T
+[info] [AndroidDriver] App file was not listed, instead we're going to run com.amazon.mShop.android.shopping directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","pm","list","packages","com.amazon.mShop.android.shopping"][info] [AndroidDriver] Starting Android session
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","echo","ping"][warn] [AndroidDriver] setDeviceLanguageCountry requires language or country.
+[warn] [AndroidDriver] Got language: 'undefined' and country: 'undefined'
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","pm","list","packages","io.appium.settings"][debug] [ADB] App is installed
+[debug] [ADB] Getting package info for io.appium.settings
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","dumpsys","package","io.appium.settings"]
+[info] [ADB] Checking whether aapt is present
+[debug] [ADB] The installed 'io.appium.settings' package does not require upgrade (5 >= 5)
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Current device property 'ro.build.version.sdk': 26
+[debug] [ADB] Device API level: 26
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","dumpsys","package","io.appium.settings"][debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","pm","dump","io.appium.settings"][debug] [ADB] Got the following command chunks to execute: pm,grant,io.appium.settings,android.permission.WRITE_SETTINGS,;,pm,grant,io.appium.settings,android.permission.ACCESS_MOCK_LOCATION,;
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","pm","grant","io.appium.settings","android.permission.WRITE_SETTINGS",";","pm","grant","io.appium.settings","android.permission.ACCESS_MOCK_LOCATION",";"][debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","ps"][debug] [ADB] Device API level: 26
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","am","start","-W","-n","io.appium.settings/.Settings","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][debug] [ADB] Device API level: 26
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","appops","set","io.appium.settings","android:mock_location","allow"][debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Getting install status for io.appium.unlock
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","pm","list","packages","io.appium.unlock"][debug] [ADB] App is installed
+[debug] [ADB] Getting package info for io.appium.unlock
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","dumpsys","package","io.appium.unlock"][info] [ADB] Checking whether aapt is present
+[debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade (2 >= 2)
+[info] [ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","getprop","ro.build.version.release"]
+[debug] [ADB] Current device property 'ro.build.version.release': 8.0.0
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","wm","size"][debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","getprop","ro.product.model"]
+[debug] [ADB] Current device property 'ro.product.model': G8441
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","getprop","ro.product.manufacturer"][debug] [ADB] Current device property 'ro.product.manufacturer': Sony
+[warn] [AndroidDriver] No app sent in, not parsing package/activity
+[debug] [AndroidDriver] No app capability. Assuming it is already on the device
+[debug] [AndroidDriver] Running fast reset (stop and clear)
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","am","force-stop","com.amazon.mShop.android.shopping"]
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","pm","clear","com.amazon.mShop.android.shopping"][debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","push","C:\\Users\\ee208447\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","ps"][info] [ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","BH9000E47T","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.amazon.mShop.android.shopping","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false][debug] [UiAutomator] Moving to state 'online'
+[info] [AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","dumpsys","window"]
+[info] [AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Device API level: 26
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","am","start","-W","-n","com.amazon.mShop.android.shopping/com.amazon.mShop.home.HomeActivity","-S"][info] [Appium] New AndroidDriver session created successfully, session fbb29a42-3bd6-4755-919e-4a4aa043d4ca added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1536915546755 (14:29:06 GMT+0530 (India Standard Time))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"appPackage":"com.amazon.mShop.android.shopping","appActivity":"com.amazon.mShop.home.HomeActivity","platformVersion":"8.0.0","--session-override":true,"platformName":"Android","deviceName":"Xperia XZ1 Compact"},"appPackage":"com.amazon.mShop.android.shopping","appActivity":"com.amazon.mShop.home.HomeActivity","platformVersion":"8.0.0","--session-override":true,"platformName":"Android","deviceName":"BH9000E47T","deviceUDID":"BH9000E47T","deviceScreenSize":"720x1280","deviceModel":"G8441","deviceManufacturer":"Sony"}
+[info] [HTTP] <-- POST /wd/hub/session 200 9442 ms - 799 
+[info] [HTTP] --> GET /wd/hub/session/fbb29a42-3bd6-4755-919e-4a4aa043d4ca {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: ["fbb29a42-3bd6-4755-919e-4a4aa043d4ca"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"appPackage":"com.amazon.mShop.android.shopping","appActivity":"com.amazon.mShop.home.HomeActivity","platformVersion":"8.0.0","--session-override":true,"platformName":"Android","deviceName":"Xperia XZ1 Compact"},"appPackage":"com.amazon.mShop.android.shopping","appActivity":"com.amazon.mShop.home.HomeActivity","platformVersion":"8.0.0","--session-override":true,"platformName":"Android","deviceName":"BH9000E47T","deviceUDID":"BH9000E47T","deviceScreenSize":"720x1280","deviceModel":"G8441","deviceManufacturer":"Sony"}
+[info] [HTTP] <-- GET /wd/hub/session/fbb29a42-3bd6-4755-919e-4a4aa043d4ca 200 3 ms - 799 
+[info] [HTTP] --> GET /wd/hub/session/fbb29a42-3bd6-4755-919e-4a4aa043d4ca {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: ["fbb29a42-3bd6-4755-919e-4a4aa043d4ca"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"appPackage":"com.amazon.mShop.android.shopping","appActivity":"com.amazon.mShop.home.HomeActivity","platformVersion":"8.0.0","--session-override":true,"platformName":"Android","deviceName":"Xperia XZ1 Compact"},"appPackage":"com.amazon.mShop.android.shopping","appActivity":"com.amazon.mShop.home.HomeActivity","platformVersion":"8.0.0","--session-override":true,"platformName":"Android","deviceName":"BH9000E47T","deviceUDID":"BH9000E47T","deviceScreenSize":"720x1280","deviceModel":"G8441","deviceManufacturer":"Sony"}
+[info] [HTTP] <-- GET /wd/hub/session/fbb29a42-3bd6-4755-919e-4a4aa043d4ca 200 3 ms - 799 
+[info] [HTTP] --> POST /wd/hub/session/fbb29a42-3bd6-4755-919e-4a4aa043d4ca/element {"using":"id","value":"com.amazon.mShop.android.shopping:id/skip_sign_in_button"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.amazon.mShop.android.shopping:id/skip_sign_in_button","fbb29a42-3bd6-4755-919e-4a4aa043d4ca"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.amazon.mShop.android.shopping:id/skip_sign_in_button","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.amazon.mShop.android.shopping:id/skip_sign_in_button","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.amazon.mShop.android.shopping:id/skip_sign_in_button' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.amazon.mShop.android.shopping:id/skip_sign_in_button][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.amazon.mShop.android.shopping:id/skip_sign_in_button' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.amazon.mShop.android.shopping:id/skip_sign_in_button]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[info] [HTTP] <-- POST /wd/hub/session/fbb29a42-3bd6-4755-919e-4a4aa043d4ca/element 500 428 ms - 164 
+[info] [HTTP] --> DELETE /wd/hub/session/fbb29a42-3bd6-4755-919e-4a4aa043d4ca {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["fbb29a42-3bd6-4755-919e-4a4aa043d4ca"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1536915547326 (14:29:07 GMT+0530 (India Standard Time))
+[info] [Appium] Removing session fbb29a42-3bd6-4755-919e-4a4aa043d4ca from our master session list
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","am","force-stop","com.amazon.mShop.android.shopping"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","input","keyevent",3][debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","ps"][info] [ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [Logcat] Stopping logcat capture
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\ee208447\AppData\Local\Android\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","BH9000E47T","shell","am","force-stop","io.appium.unlock"][debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1536915548412 (14:29:08 GMT+0530 (India Standard Time))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[info] [HTTP] <-- DELETE /wd/hub/session/fbb29a42-3bd6-4755-919e-4a4aa043d4ca 200 1088 ms - 76 
